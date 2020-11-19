@@ -1,0 +1,195 @@
+h1{text-align: center;}
+h2{text-align: left;}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #9B50A0;/*slide bar background colour*/
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #800080;/*active tab background colour*/
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #EE82EE;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;/*after the left side bar*/
+  padding: 1px 1px;
+  height: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.appname{
+  float:center;
+}
+
+.loggedin{
+  float:right;
+  margin-top: 0px;
+}
+
+
+/*drop down*/
+.dropbtn {
+  background-color: #D452D9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px; /*button border radius*/
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #800080;}
+
+/*table in staff tab*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+thead th {             /*head of the table*/
+  font-size: 15px;
+  font-weight: bold;
+  color: #A4A4A1;
+  border-left: 2px solid #6C1EA4;
+  background-color: #6C1EA4;
+  text-align: center;
+  font-size: 20px;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+/* splited page- staff*/
+{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Add user form*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+div.content1 {/*add new user form*/
+  margin-top: 109px;
+  margin-left: 20px;
+  margin-right: 850px;
+  padding: 1px 1px;
+  height: 100px;
+}
+
+div.content2 {/*add new user form*/
+  margin-top: 0px;
+  margin-left: 800px;
+  margin-right: 40px;
+  padding: 1px 1px;
+  height: 100px;
+}
+
+div.main {/*staff table area*/
+  margin-top: 109px;
+  margin-left: 20px;
+  margin-right: 50px;
+  padding: 1px 1px;
+  height: 100px;
+}

@@ -1,0 +1,63 @@
+body{
+	font-family: sans-serif;
+	color: #3c3939;
+	background-color: #f1f1f1;
+}
+.profile-card{
+	margin-left: 80px;
+	
+}
+
+.image-container{
+	position: fixed;
+	margin-top: 10px;
+	margin-left: 400px;
+	right: 900px;
+	/*width: 400px;
+	height: 400px;
+	box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);
+-webkit-box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);
+-moz-box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);*/
+}
+
+.info{
+	color: #4b4fe2;
+	margin-right: 30px;
+}
+
+.main-container{
+	margin-top: 35px;
+	padding: 30px;
+	margin-right: 200px;
+	margin-left: 850px;
+	background-color: #d4bcc7;
+	height: 350px;
+	line-height: 80px;
+	font-size: 50%;
+	font-family: -webkit-;
+	text-align: left;
+	box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);
+-webkit-box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);
+-moz-box-shadow: 10px -10px 32px -6px rgba(0,0,0,0.67);
+}
+
+.title{
+	position: absolute;
+	left: 15px;
+	top: 200px;
+}
+h2 {
+  color: 	#A52A2A;
+}
+.editButton{
+	margin-top: 20px;
+	margin-left: 20px;s
+}
+
+img {
+  border-radius: 50%;
+}
+h3{
+	text-align: left;
+	line-height: 150%;
+}
